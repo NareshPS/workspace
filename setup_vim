@@ -1,4 +1,31 @@
-# /bin/bash
+#! /bin/bash
 
 # Downloads Vundle plugin to manage vim plugins
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+VIMRC_BACKUP_PATH=~/vimrc_backup
+VIMRC_MAIN_PATH=~/.vimrc
+VUNDLE_VIMRC_PATH=$REPO_DIR/vundle_vimrc
+
+NARESHPS_VIMRC_PATH=$REPO_DIR/NareshPS_vimrc
+NARESHPS_VIM_UNDO_DIR=~/.vim/undos
+NARESHPS_VIM_SWPFILES_DIR=~/.vim/swpfiles
+
+# include dependent configuration files
+. $REPO_DIR/functions.sh
+
+if [[ -e ~/.vimrc ]]; then
+  echo "Backup up existing vimrc to: $VIMRC_BACKUP_PATH"
+  mv $VIMRC_MAIN_PATH $VIMRC_BACKUP_PATH || (echo "Failed to backup vimrc to: $VIMRC_BACKUP_PATH" && exit 2)
+fi
+
+echo "Installing $VIMRC_MAIN_PATH"
+touch $VIMRC_MAIN_PATH
+echo "" >> $VIMRC_MAIN_PATH
+echo '" Loads vundle configuration' >> $VIMRC_MAIN_PATH
+echo "source $VUNDLE_VIMRC_PATH" >> $VIMRC_MAIN_PATH
+
+initialize_NareshPS_vimrc
+
