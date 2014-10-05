@@ -29,3 +29,5 @@ echo "source $VUNDLE_VIMRC_PATH" >> $VIMRC_MAIN_PATH
 
 initialize_NareshPS_vimrc
 
+# install vundle plugins
+vim +PluginInstall +qall
