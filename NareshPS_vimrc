@@ -28,8 +28,7 @@ filetype indent on
 syntax enable
 
 " Tabs and Windows
-nmap tn :tabnew<CR>:tag 
-nmap ts :vsplit<CR>:tag 
+nmap tn :tabnew 
 nmap sp :vsplit 
 nmap nt :NERDTree<CR>
 
