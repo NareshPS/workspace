@@ -66,6 +66,8 @@ if version >= 703
     set undolevels=50 "maximum number of changes that can be undone
 endif
 
-
 " filename completion
 set isfname=@,48-57,/,.,-,_,$,~
+
+" disable markdown folding
+let g:vim_markdown_folding_disabled=1
