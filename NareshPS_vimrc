@@ -29,6 +29,7 @@ syntax enable
 
 " Tabs and Windows
 nmap tn :tabnew<CR>:tag 
+nmap tb :tabnew 
 nmap ts :vsplit<CR>:tag 
 nmap sp :vsplit 
 nmap nt :NERDTree<CR>
