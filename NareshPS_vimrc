@@ -25,7 +25,7 @@ filetype plugin on
 filetype indent on
 
 " enables syntax highlights
-syntax enable
+syntax on
 
 " Tabs and Windows
 nmap tn :tabnew<CR>:tag 
