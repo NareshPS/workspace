@@ -46,7 +46,9 @@ Bundle 'tpope/vim-rake'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'Valloric/YouCompleteMe'
+" ERROR: ycm_client_support.[so|pyd|dll] and ycm_core.[so|pyd|dll] not detected; you
+" need to compile YCM before using it. Read the docs!
+" Bundle 'Valloric/YouCompleteMe'
 " Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
