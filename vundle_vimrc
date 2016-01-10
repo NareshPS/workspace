@@ -46,6 +46,7 @@ Bundle 'tpope/vim-rake'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'Valloric/YouCompleteMe'
 " Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
@@ -56,6 +57,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-endwise'
+Bundle 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
