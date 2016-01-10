@@ -18,3 +18,4 @@ cd -
 # configure git
 git config --global user.name "ludak"
 git config --global user.email ludak@ludak.me
+git config --global push.default simple
