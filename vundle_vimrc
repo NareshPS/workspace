@@ -60,6 +60,9 @@ Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-endwise'
 Bundle 'ervandew/supertab'
+Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
