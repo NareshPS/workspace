@@ -1,0 +1,10 @@
+### Conda based project dependencies ###
+
+#Anaconda navigator
+anaconda-navigator
+
+#Tensorflow
+tensorflow
+
+#GTK and graphics visualization
+pycairo
