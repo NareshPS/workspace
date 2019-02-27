@@ -19,6 +19,9 @@ set tabstop=2
 set tags=./tags,tags;/,./rtags,rtags;/
 set whichwrap+=<,>
 
+" Disable beep
+set belloff=all
+
 " enables indentation for open file type
 filetype on
 filetype plugin on

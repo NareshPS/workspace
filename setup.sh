@@ -1,11 +1,13 @@
+#! /bin/bash
+
 # get latest packages
-sudo apt-get update
+sudo apt update
 
 # copy from command line
-sudo apt-get install xclip
+sudo apt install xclip
 
 # fish
-sudo apt-get install fish
+sudo apt install fish
 
 # on my fish
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
@@ -14,6 +16,13 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 cd ~/workspace
 ./setup_vim
 cd -
+
+#Make fish default shell
+FISH_LOCATION=`which fish`
+chsh -s $FISH_LOCATION
+
+#Download fish extensions
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 # configure git
 git config --global user.name "ludak"
