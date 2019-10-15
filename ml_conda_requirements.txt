@@ -1,10 +1,7 @@
 ### Conda based project dependencies ###
-
-#Anaconda navigator
-anaconda-navigator
-
-#Tensorflow
+#Tensorflow and Keras
 tensorflow
+keras
 
 #GTK and graphics visualization
 pycairo
