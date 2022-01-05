@@ -1,7 +1,3 @@
 ### Conda based project dependencies ###
-#Tensorflow and Keras
+#Tensorflow
 tensorflow
-keras
-
-#GTK and graphics visualization
-pycairo
