@@ -23,7 +23,7 @@ chsh -s $fish_location
 echo $fish_location | sudo tee -a /etc/shells
 
 #Download fish extensions
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+#curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 #Upgrade git
 sudo apt install --upgrade git
