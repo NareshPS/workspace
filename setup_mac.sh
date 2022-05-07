@@ -1,13 +1,7 @@
 #! /bin/bash
 
-# get latest packages
-sudo apt update
-
-# copy from command line
-sudo apt install xclip
-
 # fish
-sudo apt install fish
+brew install fish
 
 # on my fish
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
@@ -17,14 +11,14 @@ cd ~/workspace
 ./setup_vim
 cd -
 
-#Make fish default shell
+# Make fish default shell
 fish_location=`which fish`
 echo $fish_location
 echo $fish_location | sudo tee -a /etc/shells
 chsh -s $fish_location
 
-#Upgrade git
-sudo apt install --upgrade git
+# set fish paths
+fish -c "set -U fish_user_paths /opt/homebrew/bin $fish_user_paths"
 
 # configure git
 git config --global user.name "ludak"
